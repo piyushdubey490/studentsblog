@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 50px;
+  text-align: center;
+  background-color: rgba(48, 191, 216, 0.904);
+font-family:'Fugaz One','Satisfy', Arial, fantasy, cursive;
+
+color: rgb(240, 239, 239);
+text-shadow:  2px 2px #FF0000;
+}
+nav{
+
+background-color: #333;
+overflow: hidden;
+}
+nav a{
+
+    font-size: large;
+text-decoration: none;
+padding: 10px;
+padding-left: 100px;
+text-align: center;
+
+float: left;
+color: white;
+}
+a:hover{
+    color: green !important;
+    background-color: transparent;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(199, 198, 198);
+  width: 100%;
+  height: 70% !important ;
+  padding: 0px;
+}
+a{
+  text-decoration: none;
+
+}
+a:visited{
+  color: initial;
+}
+nav a:visited{
+  color: white;
+}
+
+
+
+.trd{
+  animation-name: colors;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+text-align: center;
+background-color: rgb(233, 45, 45);
+color: white;
+font-size: 25px;
+font-family: 'Courier New', Courier, monospace;
+position: relative;
+}
+@keyframes colors{
+  from {
+    top: 10px;
+    border-radius: 0;
+    box-shadow:0 0 5px rgba(0,0,0,1);
+  }
+  to {
+    top: -10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+  }
+}
+
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   box-shadow: 0.5px 0.5px #aaa;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #333;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+
+  }
+  .header{
+    font-size: 30px;
+  }
+  nav a{
+    padding-left: 10px;
+    font-size: small;
+  }
+  .btn{
+    padding: 10px 12px !important;
+    font-size: 10px !important;
+  }
+}
+#sup{
+color: rgb(252, 249, 249);
+background-color: rgba(19, 153, 163, 0.836);
+box-shadow: 1px 1px #aaa;
+}
+input[type="submit"]{
+padding: 4px;
+background-color: rgba(4, 189, 14, 0.719);
+border-radius: 10px;
+border: none;
+width: 30%;
+}
+input[type="submit"]:hover{
+background-color: transparent;
+border: 2px solid green;
+cursor: pointer;}
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn {
+  border-color: #2196F3;
+  color: dodgerblue
+}
+
+.btn:hover {
+  background: #2196F3;
+  color: white;
+}
+.buttons{
+  
+}
+.footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Students Blog</h2>
+</div>
+<nav >
+  <a href="home.html">Home</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html">Contact</a>
+  <a href="form.html">Login</a>
+  </nav>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        <img src="stock1.jpg" alt="image">
+        <h1>10 Programming Language for students</h1>
+        <p style="font-size: larger;">
+            There’s no question that software programming is a hot career right now. The U.S. Bureau of Labor Statistics projects 21 percent growth for programming jobs from 2018 to 2028, which is more than four times the average for all occupations. What’s more, the median annual pay for a software programmer is about $106,000, which nearly three times the median pay for all U.S. workers.
+    
+    Not all programming jobs are the same, however. Different roles, companies, and types of software require knowing and understanding different programming languages—and it’s often beneficial to know multiple languages. Trying to break into the field of software programming can be a daunting experience, especially for professionals with no prior programming experience.
+    
+    
+        </p>
+        <div style="display: block; font-size: larger;">
+            Top 10 Most Popular Programming Languages are below:
+            <hr>
+            <hr>
+            <br>
+    <p style="color: red;"> 1. Python</p>
+    
+    <p style="color: blue;"> Number of jobs: 19,000 </p>
+    <p>
+    Average annual salary: $120,000
+    
+    Benefits: Python is widely regarded as a programming language that’s easy to learn, due to its simple syntax, a large library of standards and toolkits, and integration with other popular programming languages such as C and C++. In fact, it’s the first language that students learn in the Align program, Gorton says. “You can cover a lot of computer science concepts quickly, and it’s relatively easy to build on.” It is a popular programming language, especially among startups, and therefore Python skills are in high demand.
+    
+    Drawbacks: Python is not suitable for mobile application development.<br><br>
+    </p>
+    Common uses: Python is used in a wide variety of applications, including artificial intelligence, financial services, and data science. Social media sites such as Instagram and Pinterest are also built on Python.
+    <br><br>
+    <p style="color: red;">2. JavaScript</p>
+    <p style="color: blue;">Number of jobs: 24,000</p>
+    <p>
+    Average annual salary: $118,000
+    
+    Benefits: JavaScript is the most popular programming language for building interactive websites; “virtually everyone is using it,” Gorton says. When combined with Node.js, programmers can use JavaScript to produce web content on the server before a page is sent to the browser, which can be used to build games and communication applications that run directly in the browser. A wide variety of add-ons extend the functionality of JavaScript as well. 
+    
+    Drawbacks: Internet browsers can disable JavaScript code from running, as JavaScript is used to code pop-up ads that in some cases can contain malicious content. 
+    
+    Common uses: JavaScript is used extensively in website and mobile application development. Node.js allows for the development of browser-based applications, which do not require users to download an application.
+    </p><br><br>
+    <p style="color: red;">3. Java</p>
+    <p style="color:blue;">Number of jobs: 29,000</p>
+    <p>
+    Average annual salary: $104,000
+    
+    Benefits: Java is the programming language most commonly associated with the development of client-server applications, which are used by large businesses around the world. Java is designed to be a loosely coupled programming language, meaning that an application written in Java can run on any platform that supports Java. As a result, Java is described as the “write once, run anywhere” programming language.
+    
+    Drawbacks: Java is not ideal for applications that run on the cloud, as opposed to the server (which is common for business applications). In addition, the software company Oracle, which owns Java, charges a licensing fee to use the Java Development Kit.
+    
+    Common uses: Along with business applications, Java is used extensively in the Android mobile operating system.
+    </p><br>
+    <p style="color: red;">4. C#</p>
+    <p style="color:blue;">Number of jobs: 18,000</p>
+    <p>
+    Average annual salary: $97,000
+    
+    Benefits: Microsoft developed C# as a faster and more secure variant of C. It is fully integrated with Microsoft’s .NET software framework, which supports the development of applications for Windows, browser plug-ins, and mobile devices. C# offers shared codebases, a large code library, and a variety of data types.
+    
+    Drawbacks: C# can have a steep learning curve, especially for resolving errors. It is less flexible than languages such as C++. 
+    
+    Common uses: C# is the go-to language for Microsoft ad Windows application development. It can also be used for mobile devices and video game consoles using an extension of the .NET Framework called Mono.
+    </p><br>
+    <p style="color: red;">5. C</p>
+    <p style="color: blue;">Number of jobs: 8,000</p>
+    <p>
+    Average annual salary: $97,000
+    
+    Benefits: Along with Python and Java, C forms a “good foundation” for learning how to program, Gorton says. As one of the first programming languages ever developed, C has served as the foundation for writing more modern languages such as Python, Ruby, and PHP. It is also an easy language to debug, test, and maintain.
+    
+    Drawbacks: Since it’s an older programming language, C is not suitable for more modern use cases such as websites or mobile applications. C also has a complex syntax as compared to more modern languages.
+    
+    Common uses: Because it can run on any type of device, C is often used to program hardware, such as embedded devices in automobiles and medical devices used in healthcare. 
+    </p><br>
+    <p style="color: red;">6. C++</p>
+    <p style="color: blue;">Number of jobs: 9,000</p>
+    <p>
+    Average annual salary: $97,000
+    
+    Benefits: C++ is an extension of C that works well for programming the systems that run applications, as opposed to the applications themselves. C++ also works well for multi-device and multi-platform systems. Over time, programmers have written a large set of libraries and compilers for C++. Being able to use these utilities effectively is just as important to understanding a programming language as writing code, Gorton says.
+    
+    Drawbacks: Like C, C++ has complex syntax and an abundance of features that can make it complicated for new programmers. C++ also does not support run-time checking, which is a method of detecting errors or defects while software is running. 
+    
+    Common uses: C++ has many uses and is the language behind everything from computer games to mathematical simulations.
+    </p><br>
+    <p style="color: red;">7. Go</p>
+    <p style="color: blue;">Number of jobs: 1,700</p>
+    <p>
+    Average annual salary: $93,000
+    
+    Benefits: Also referred to as Golang, Go was developed by Google to be an efficient, readable, and secure language for system-level programming. It works well for distributed systems, in which systems are located on different networks and need to communicate by sending messages to each other. While it is a relatively new language, Go has a large standards library and extensive documentation.
+    
+    Drawbacks: Go has not gained widespread use outside of Silicon Valley. Go does not include a library for graphical user interfaces, which are the most common ways that end-users interact with any device that has a screen.
+    
+    Common uses: Go is used primarily for applications that need to process a lot of data. In addition to Google, companies using Go for certain applications include Netflix, Twitch, and Uber.
+    </p><br>
+    <p style="color: red;">8. R</p>
+    <p style="color: blue;">Number of jobs: 1,500</p>
+    <p>
+    Average annual salary: $93,000
+    
+    Benefits: R is heavily used in statistical analytics and machine learning applications. The language is extensible and runs on many operating systems. Many large companies have adopted R in order to analyze their massive data sets, so programmers who know R are in great demand. 
+    
+    Drawbacks: R does not have the strict programming guidelines of older and more established languages. 
+    
+    Common uses: R is primarily used in statistical software products. 
+    </p><br>
+    <p style="color: red;">9. Swift</p>
+    <p style="color: blue;">Number of jobs: 1,800</p>
+    <p>
+    Average annual salary: $93,000 
+    
+    Benefits: Swift is Apple’s language for developing applications for Mac computers and Apple’s mobile devices, including the iPhone, iPad, and Apple Watch. Like many modern programming languages, Swift has a highly readable syntax, runs code quickly, and can be used for both client-side and server-side development. 
+    
+    Drawbacks: Swift can only be used on newer versions of iOS 7 and will not work with older applications. As a newer programming language, the code can be unstable at times, and there are fewer third-party resources available to programmers.
+    
+    Common uses: Swift is used for iOS and macOS applications. 
+    </p><br>
+    <p style="color: red;">10. PHP</p>
+    <p style="color: blue;">Number of jobs: 7,000</p>
+    <p>
+    Average annual salary: $81,000
+    
+    Benefits: PHP is widely used for server-side web development, when a website frequently requests information from a server. As an older language, PHP benefits from a large ecosystem of users who have produced frameworks, libraries, and automation tools to make the programming language easier to use. PHP code is also easy to debug.
+    
+    Drawbacks: As Python and JavaScript have gained popularity, PHP’s popularity has dropped. PHP is also known for its security vulnerabilities. According to Indeed, most PHP programmers take short-term roles that last less than one year.
+    
+    Common uses: PHP is the code running content-oriented websites such as Facebook, WordPress, and Wikipedias
+      </p>  </div>
+      </div>
+  </div>
+  <div class="rightcolumn">
+   
+    <div class="card">
+      <h3 class="trd">Trending Posts</h3>
+      <div class="fakeimg"><img src="art6.jpg" alt="" width="100%">
+        <a href="ar3.html" style="text-align: center; color:rgb(0, 0, 0);"> &nbsp;10 Programming language for begginers</a>
+       </div><br>
+      <div class="fakeimg"><img src="art5.jpg" alt="" width="100%"><a href="#">&nbsp;
+    Student bussiness ideas and startup opportunities</a></div><br>
+      <div class="fakeimg">
+        <img src="art7.jpg" alt="" width="100%">
+        <a href="#">&nbsp;Fun Things to Do in College</a>
+      </div>
+    </div>
+    <div class="card" id="sup">
+      <h2 style="text-align: center; text-shadow:0.5px 0px rgb(48, 46, 45); ">Become a supporter</h2>
+      <ul>
+        <li><a href="article.html">Write an article</a></li>
+        <li><a href="https://www.patreon.com">Donate</a></li>
+        <li><a href="https://www.blogger.com">Create own blog</a></li>
+      </ul>
+          </div>
+    <div class="card" style="background-color: rgba(194, 6, 6, 0.678);box-shadow: 1px 1px #aaa;overflow: hidden;">
+      <h2 style="color: rgba(255, 255, 240, 0.849);text-shadow: 1px 1px tomato;text-align: center;">Feedback</h2>
+      <textarea name="feed" id="feed" cols="30" rows="8" placeholder="type here..."></textarea>
+      <input type="submit" value="Submit">
+    </div>
+  </div>
+</div>
+<br><br>
+<div class="footer">
+  <a href="#">FAQ</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="terms.html">Terms of Use</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Refund Policy</a>
+  <a href="#">&copy; 2021 | STUDENTS BLOG</a>
+</div>
+
+</body>
+</html>

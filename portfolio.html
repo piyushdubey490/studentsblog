@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  background-color: #a30707be;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+  box-shadow: 1px 1px grey;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+ float: left;
+  width: 25%;
+  
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <h1 style="text-shadow: 1px 1px rgb(14, 238, 63); color: rgb(16, 16, 192);">PORTFOLIO</h1>
+        <hr>
+        
+        <h2 style="background-color:rgb(244, 245, 244); text-shadow: 0.5px 0.8px grey;">Students of LPU</h2>
+        <p style="color: blue;">LPU is India's Top Tier Engineering College , and we are glad we are studying here</p>
+        
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column">
+            <div class="content">
+              <img src="pd.jpg" alt="Piyush Dubey" style="width:100%">
+              <h3>Piyush Dubey!!</h3>
+              <p>JACK OF ALL TRADES !!
+              <br>BOSS FOR A REASON !
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="sayed.jpg" alt="Lights" style="width:100%">
+              <h3>Sayed Mohd Asim</h3>
+              <p>No Matter what the situation is always wear a smile !!</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="MK.jpg" alt="Nature" style="width:100%">
+              <h3>Mithlesh Yadav</h3>
+              <p>Live Live To Fullest</p>
+            </div>
+            
+          </div>
+          
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        <!-- END MAIN -->
+        </div>
+</body>
+</html>

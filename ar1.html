@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 50px;
+  text-align: center;
+  background-color: rgba(48, 191, 216, 0.904);
+font-family:'Fugaz One','Satisfy', Arial, fantasy, cursive;
+
+color: rgb(240, 239, 239);
+text-shadow:  2px 2px #FF0000;
+}
+nav{
+
+background-color: #333;
+overflow: hidden;
+}
+nav a{
+
+    font-size: large;
+text-decoration: none;
+padding: 10px;
+padding-left: 100px;
+text-align: center;
+
+float: left;
+color: white;
+}
+a:hover{
+    color: green !important;
+    background-color: transparent;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(199, 198, 198);
+  width: 100%;
+  height: 70% !important ;
+  padding: 0px;
+}
+a{
+  text-decoration: none;
+
+}
+a:visited{
+  color: initial;
+}
+nav a:visited{
+  color: white;
+}
+
+
+
+.trd{
+  animation-name: colors;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+text-align: center;
+background-color: rgb(233, 45, 45);
+color: white;
+font-size: 25px;
+font-family: 'Courier New', Courier, monospace;
+position: relative;
+}
+@keyframes colors{
+  from {
+    top: 10px;
+    border-radius: 0;
+    box-shadow:0 0 5px rgba(0,0,0,1);
+  }
+  to {
+    top: -10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+  }
+}
+
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   box-shadow: 0.5px 0.5px #aaa;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #333;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+
+  }
+  .header{
+    font-size: 30px;
+  }
+  nav a{
+    padding-left: 10px;
+    font-size: small;
+  }
+  .btn{
+    padding: 10px 12px !important;
+    font-size: 10px !important;
+  }
+}
+#sup{
+color: rgb(252, 249, 249);
+background-color: rgba(19, 153, 163, 0.836);
+box-shadow: 1px 1px #aaa;
+}
+input[type="submit"]{
+padding: 4px;
+background-color: rgba(4, 189, 14, 0.719);
+border-radius: 10px;
+border: none;
+width: 30%;
+}
+input[type="submit"]:hover{
+background-color: transparent;
+border: 2px solid green;
+cursor: pointer;}
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn {
+  border-color: #2196F3;
+  color: dodgerblue
+}
+
+.btn:hover {
+  background: #2196F3;
+  color: white;
+}
+.buttons{
+  
+}
+.footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Students Blog</h2>
+</div>
+<nav >
+  <a href="homepage.html">Home</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html">Contact</a>
+  <a href="form.html">Login</a>
+  </nav>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>What is Student life?</h2>
+      <h5> April 12, 2021</h5>
+      <div class="fakeimg" style="background-color: transparent;">
+        <img src="college.jpg" alt="Image" width="100%" height="100%">
+      </div>
+      <p style="font-size: large;">Student life is the happiest period in the life of a person. It is a life, free from all anxieties of the tough world. The mind of the student is full of noble ideas and his eyes are full of dreams.
+     <br><br>
+        Student life is the most crucial period in the life of a person. The most important things in students life are discipline and punctuality without discipline students are like a bird without wings. Punctuality is the exact time to again knowledge.
+        <br><br>
+        It is said that “student life is golden life,” because student life is the most important part of human life. It is the period of pure joy and happiness, because the mind of a student is free from cares and worries of a grown-up life.
+<br><br>
+In this period, the character of man is built. So, it is called the formative period of human life. Every student should try his best to make the best use of his student life.
+<br><br>
+The primary duty of a student is to learn and to acquire knowledge. He must do all his work at the right moment and maintain punctuality and discipline.
+He must remember that if a student becomes successful in his student career and his character is built on a sound basic, he will be able to shine in any sphere of life and serve his society and countries.
+<br><br>
+A student should spend most of his time of this golden period in reading and learning. A good student never waste his time fixed for reading uselessly.
+But he must not be a book-worm being always engaged in his studies. He should also be careful about his health and spend some time daily in some
+sports and games. He should try to develop his body and mind at the same time.<br><br>
+
+As a student he must try to develop his intellect. He should also try to acquire some good qualities like obedience, dutifulness, respect on elders and love and sympathy for fellow man in the society. The duty of a student is to obey his parents and teachers and respect the elders of the society.
+<br><br>
+Students are the future hope of country. So every student should try to be the best citizen in all respects, so that he may serve his country as far as
+he can.<br><br>
+Student Life is really good in the sense that you get to learn a lot of things and meet various new people and enjoy with them. As students,our responsibilities are​limited.Learning new things ,making achievement​ and having a gala time with friends makes student life really beautiful.
+<br><br>
+Few things need to be kept in mind to make this phase of Life more beautiful:<br>
+
+# LEARNING SHOULD BE TOP PRIORITY. You should enjoy learning the things taught to you.
+<br><br>
+#DON’T GET DISTRACTED.Your life will give you a thousand opportunities to make friends,go for picnics or use a smartphone.But the student life won't come back
+<br><br>
+#DON’T STUDY FOR GRADES. Never study just for the sake of scoring good marks.You may get marks this way but you can't pursue a good career with this philosophy
+<br><br>
+#NEVER MUG UP. Mugging up concepts will give you nothing .You can get a degree by mugging up,but what about your career?A teacher with no knowledge​ can't teach,an Engineer without knowledge can't do anything substantial,a Doctor without proper knowledge can never heal patients .
+<br><br>
+#NEVER LOSE HOPE.If you don't get good grades ,that doesn't mean you can never do anything. Failing in an exam doesn't mean you can never pass .Always have a positive attitude towards life . If you don't make best use of opportunities you'll have to regret the whole life.
+<br<br>
+With the help of smart work and proper use of time ,you can achieve many things in your student life and each step will take you towards success
+</p>
+      </div>
+  </div>
+  <div class="rightcolumn">
+   
+    <div class="card">
+      <h3 class="trd">Trending Posts</h3>
+      <div class="fakeimg"><img src="art6.jpg" alt="" width="100%">
+        <a href="#" style="text-align: center; color:rgb(0, 0, 0);"> &nbsp;10 Programming language for begginers</a>
+       </div><br>
+      <div class="fakeimg"><img src="art5.jpg" alt="" width="100%"><a href="#">&nbsp;
+    Student bussiness ideas and startup opportunities</a></div><br>
+      <div class="fakeimg">
+        <img src="art7.jpg" alt="" width="100%">
+        <a href="#">&nbsp;Fun Things to Do in College</a>
+      </div>
+    </div>
+    <div class="card" id="sup">
+      <h2 style="text-align: center; text-shadow:0.5px 0px rgb(48, 46, 45); ">Become a supporter</h2>
+      <ul>
+        <li><a href="article.html">Write an article</a></li>
+        <li><a href="https://www.patreon.com">Donate</a></li>
+        <li><a href="https://www.blogspot.com">Create own blog</a></li>
+      </ul>
+          </div>
+    <div class="card" style="background-color: rgba(194, 6, 6, 0.678);box-shadow: 1px 1px #aaa;overflow: hidden;">
+      <h2 style="color: rgba(255, 255, 240, 0.849);text-shadow: 1px 1px tomato;text-align: center;">Feedback</h2>
+      <textarea name="feed" id="feed" cols="30" rows="8" placeholder="type here..."></textarea>
+      <input type="submit" value="Submit">
+    </div>
+  </div>
+</div>
+<br><br><center>
+<div class="buttons">
+  <button class="btn " style="border-color: #aaa; " onclick="window.location.href='#';">Back</button>
+<button class="btn " style="border-color: #aaa;" onclick="window.location.href='#';">1</button>
+<button class="btn "  onclick="window.location.href='home2.html';">2</button>
+<button class="btn " onclick="window.location.href='home3.html';">3</button>
+<button class="btn "  onclick="window.location.href='home2.html';">Next</button>
+
+</center>
+                      
+</div>
+<div class="footer">
+  <a href="#">FAQ</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="terms.html">Terms of Use</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Refund Policy</a>
+  <a href="#">&copy; 2021 | STUDENTS BLOG</a>
+</div>
+
+</body>
+</html>
